@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ministerio de Desarrollo</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <header class="header">
+        <img src="./Assets/logoSantaCruz.png" alt="logo santa cruz" />
+        <h2 class="header-title">
+          Ministerio de Desarrollo Social, Igualdad e Integración
+        </h2>
+      </header>
+      <nav>
+        <ul>
+          <li class="nav-item"><a href="">Inicio</a></li>
+          <li class="nav-item"><a href="">Programas</a></li>
+          <li class="nav-item"><a href="">Normativas</a></li>
+          <li class="nav-item"><a href="">Noticias</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="hero-title">
+          <h1>Ministerio de Desarrollo Social, Igualdad e Integración</h1>
+        </div>
+        <div class="hero-section">
+          <div class="hero-section_div">
+            <i class="ri-government-line"></i>
+            <p>Autoridades</p>
+          </div>
+          <div class="hero-section_div">
+            <i class="bx bx-cog"></i>
+            <p>Programas</p>
+          </div>
+          <div class="hero-section_div">
+            <i class="ri-scales-3-line"></i>
+            <p>Normativas</p>
+          </div>
+          <div class="hero-section_div">
+            <i class="bx bx-news"></i>
+            <p>Noticias</p>
+          </div>
+        </div>
+      </section>
+      <section class="interactive-map">
+        <header class="header-map-section">
+          <h2>Cooperativas y Mutuales</h2>
+          <h3>Seleccione un Departamento</h3>
+        </header>
+        <div class="map-container">
+          <object
+            id="mapa"
+            type="image/svg+xml"
+            data="./Assets/SantaCruzMap2.svg"
+          ></object>
+          <aside class="map-inputs">
+            <h2></h2>
+            <input
+              id="inputLocalidad"
+              list="localidad"
+              placeholder="Seleccione una Localidad"
+            />
+            <datalist id="localidad">
+            </datalist>
+            <input
+              id="inputCooperativa"
+              list="cooperativa"
+              placeholder="Seleccione una Cooperativa/Mutual"
+            />
+            <datalist id="cooperativa">
+            </datalist>
+          </aside>
+          <aside class="information">
+            <div>
+              <h2></h2>
+              <p></p>
+              <ul>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <footer></footer>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
