@@ -44,7 +44,7 @@ let cooperativaData = [];
 
 async function fetchCoop() {
     try {
-        const response = await fetch('http://localhost:55426/api/Coop');
+        const response = await fetch('https://apicoopmut20240929175824.azurewebsites.net/');
         cooperativaData = await response.json(); 
     } catch (error) {
         console.error('Error al cargar datos:', error);
